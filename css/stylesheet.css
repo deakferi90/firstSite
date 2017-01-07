@@ -1,0 +1,156 @@
+
+body {
+      font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      font-size: 14px;
+      line-height: 25px;
+      color: #4d4d4d;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0.05em;
+}
+
+.barr {
+      width: 100%;
+      height: 96px;
+      line-height: 36px;
+      display:flex;
+}
+.barr div {
+  width:50%;
+}
+.logo {
+      font-weight: bold;
+      line-height: 36px;
+      color:  #212121;
+      font-size: 30px;
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 25px;
+}
+
+.logo  span {
+      margin-left: 5px;
+      color: #00aef0;
+      font-size: 30px;
+      letter-spacing: 0;
+      margin-right: 3px;
+
+}
+.logo samp {
+      border-radius: 3px;
+      color: #fff;
+      float: left;
+      margin-right: 6px;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      height: 36px;
+      width: 36px;
+      font-weight: 800;
+      background-color: #00aef0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.navigation {
+  width: 50%;
+  height: 96px;
+  text-align: center;
+  display: block;
+}
+
+li {
+      list-style: none;
+}
+
+.parent {
+  margin-top: 15px;
+}
+
+ul.parent > li {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+
+ul.parent > li:hover {
+  color: #00aef0;
+}
+
+ul .child {
+  display:none;
+  overflow: visible;
+  position: absolute;
+  z-index: 5;
+  top: 66px;
+  color:#4d4d4d;
+}
+
+ul.child > li {
+  border-bottom: 1px ridge grey;
+  padding-right: 80px;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #00aef0;
+}
+
+.parent li > img {
+  background-color: #00aef0;
+  width: 36px;
+  height: 36px;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+  height: 605px;
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  top: 330px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.left, .right {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.active {
+  display: block;
+  width: 100%;
+  position:relative;
+}
+
+.active img {
+  width: 100%;
+  height: auto;
+}
