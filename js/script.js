@@ -24,7 +24,7 @@ $(document).ready(function(){
       });
 
 
-      setInterval(showNextSlide, 2000);
+      
 
 function showNextSlide() {
   if (currentPosition === 3) {
