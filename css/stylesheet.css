@@ -134,6 +134,7 @@ a {
 
 .left, .right {
   cursor: pointer;
+  border: 1px solid red;
 }
 
 .left {
