@@ -24,7 +24,7 @@ $(document).ready(function(){
       });
 
 
-      
+
 
 function showNextSlide() {
   if (currentPosition === 3) {
