@@ -1,0 +1,142 @@
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: normal;
+  background-color: #fff;
+  letter-spacing: 0.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: #3b5998;
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 36px;
+  vertical-align: middle;
+  text-align: center;
+  color: #e9ebee;
+  font-family: 'Satisfy', cursive;
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 600px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul.parent1  {
+  font-size: 16px;
+  float: left;
+  text-align: left;
+  color: #e9ebee;
+  position: absolute;
+  top: 20px;
+  letter-spacing: 0.10em;
+}
+
+ul.parent1 > li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+ul.parent2  {
+  font-size: 16px;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  letter-spacing: 0.15em;
+  color: #e9ebee;
+}
+
+ul.parent2 > li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+ul.parent1 > li:hover {
+  color: #F7C221;
+}
+
+ul.parent2 > li:hover {
+  color: #F7C221;
+}
+
+ul .child {
+  display: none;
+  position: absolute;
+  top: 63px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  background-color: #FAFAFA;
+  color: #fff;
+  border-bottom: 1px ridge #7c7c7c;
+  z-index: 5;
+}
+
+ul.child > li {
+  border-style: ridge;
+  border-color: #7c7c7c;
+  border-width: 0.5px 1px 0px 1px;
+  margin-left: -40px;
+  padding: 5px 16px 5px 8px;
+  color: #7c7c7c;
+}
+
+ul.child > li:hover {
+  color: #F7C221;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 1080px;
+}
+
+.slider {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+}
+
+.sp {
+  width: 100%;
+  height: 1080px;
+  position: absolute;
+}
+
+.buttons {
+  position: absolute;
+  top: 380px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.left, .right {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
