@@ -3,78 +3,103 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>My Site</title>
+    <link href="css/firstSite.css" type = "text/css" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   </head>
   <body>
-    <div class="page">
-    <!-- This is the Container (navigation and logo) -->
-    <div class="barr">
-      <div>
-          <div class="logo"><samp>B</samp>Biz<span>camp</span></div>
-      </div>
-      <nav class="navigation">
-        <ul class="parent">
-        <li class="active1"><a href = "index.html">Home</a></li>
-        <li>Pages
-          <ul class="child">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Faq</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-            <li>Cart</li>
-            <li>Pricing</li>
-          </ul>
-        </li>
-          <li>Projects
-            <ul class="child">
-                <li>Project Two Column</li>
-                <li>Project Three Column</li>
-                <li>Project Four Column</li>
-            </ul>
-          </li>
-          <li>Feature
-            <ul class="child">
-              <li>Tab</li>
-              <li>Team</li>
-              <li>Typography</li>
-              <li>Accordion</li>
-            </ul>
-        </li>
-          <li>Blog
-            <ul class="child">
-              <li>Blog-Right-Sidebar</li>
-              <li>Single-Blog</li>
-              <li>Blog-Full-Width</li>
-              <li>Blog-Left-Sidebar</li>
-              <li>Blog-Col-2</li>
-            </ul>
-          </li>
-          <li>Contact us</li>
-          <li>Shop</li>
-          <li><img src="images/cart.png" alt="cart"></li>
-      </ul>
-      </nav>
-    </div>
-    <!-- jQuery Slider -->
-   <div class="container">
-     <div class="buttons">
-       <div class="left">
-            <img src="images/back.png"/>
+    <div class="wrapper">
+     <div class="header">
+       <div class="logo">
+         <div class="img_container1">
+          <img src="images/plane.png" alt="icon">
+        </div>
+          <h1>Travel In The USA With Joey</h1>
        </div>
-       <div class="right">
-          <img src="images/next.png"/>
-       </div>
+       <div class="navigation">
+         <ul class="parent1">
+         <li>Start Here
+           <a href="#"><img src="images/down-arrow.png" alt="down-arrow"></a>
+           <ul class="child">
+           <li>Get Inspired</li>
+           <li>How to save money for trip</li>
+           <li>Find cheap airfare</li>
+           <li>Find cheap hotels</li>
+         </ul>
+        </li>
+         <li>About</li>
+         <li>Blog Posts</li>
+       </ul>
+        <ul class="parent2">
+         <li>Guides
+           <a href="#"><img src="images/down-arrow.png" alt="down-arrow "></a>
+           <ul class="child">
+             <li>Books</li>
+             <li>City Guides</li>
+             <li>Map</li>
+           </ul>
+         </li>
+           <li>Destination</li>
+           <li>Resources
+             <a href="#"><img src="images/down-arrow.png" alt="down-arrow"></a>
+             <ul class="child">
+               <li>Airfare</li>
+               <li>Accomodation</li>
+               <li>Transportation</li>
+               <li>Gear</li>
+             </ul>
+         </li>
+       </ul>
      </div>
-     <ul class="slides">
-       <li class="slide slide1 active"><img src= "images/slide1.jpg"/></li>
-       <li class="slide slide2"><img src= "images/slide2.jpg"/></li>
-       <li class="slide slide3"><img src= "images/slide3.jpg"/></li>
-     </ul>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider">
+            <div class="sp" style="background-image: url(images/grandcanyon.jpg); height: 720px; width: 100%;"></div>
+            <div class="sp" style="background-image: url(images/sf.jpg); height: 720px; width: 100%;"></div>
+            <div class="sp" style="background-image: url(images/nyc.jpg); height: 720px; width: 100%;" ></div>
+            <div class="sp" style="background-image: url(images/honolulu.jpg); height: 720px; width: 100%;"></div>
+        </div>
+        <div class="buttons">
+            <div class="left"><img src="images/back.png"/>
+            </div>
+            <div class="right"><img src="images/next.png"/></div>
+      </div>
    </div>
+   <div class="section">
+     <p>We are ready to give you tips</p>
+     <button onclick="document.getElementById('id01').style.display='block'" class="sup" style="width:auto;">Sign Up</button>
   </div>
+    <div id="id01" class="popup animate">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+    <div class="img_container2">
+      <img src="images/passport.png" alt="passport" height="256" width="256">
+    </div>
+    <h1>Travel With Us</h1>
+    <h2>New Account</h2>
+    <form method="post" action="file:///D:/Programare/CSS3%20Styling/firstSite/index.html">
+    <label for="username">Username: </label>
+    <input type="text" id ="username" /><div id ="feedback"></div>
+    <label for="password">Password: </label>
+    <input type="password" id ="password">
+    <input type="submit" value="Sign Up">
+  </form>
+</div>
+  <div class="newsection">
+    <div class="newpicture">
+    <img src="images/nature.jpg" width="100%" height="1058">
+  </div>
+    <div class="post">
+  <h2>Latest Blog Posts</h2>
+</div>
+<div class="item">
+  <img src="images/desk.jpg" width="400" height="210" alt="desk">
+  <h3 class="h3">Why it's never perfect to travel</h3>
+  <p>People always put off traveling because it’s never the right time. There is always a reason to go tomorrow
+    but it will never be perfect. There will always be something that comes up or isn’t right. Here’s why now is the best time to travel.</p>
+</div>
+  </div>
+</div>
     <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/firstSite.js"></script>
   </body>
 </html>
